@@ -10,7 +10,7 @@ iPadOS 26 exposes this per-corner data on every `UIView` via `directionalEdgeIns
 
 ## Platform support
 
-iOS 13.0 or later for installation. Corner values only populate on iPad devices running iPadOS 26.0+. On iPhone, iOS 13.0–25.x, Android phones, Android tablets, other platforms, and tests without a platform stub, every value is reported as `CornerInsets.zero` and the widgets become effectively no-ops. Android, macOS, web, Windows, and Linux are not implemented.
+iOS 15.0 or later for installation. Corner values only populate on iPad devices running iPadOS 26.0+. On iPhone, iOS 15.0–25.x, Android phones, Android tablets, other platforms, and tests without a platform stub, every value is reported as `CornerInsets.zero` and the widgets become effectively no-ops. Android, macOS, web, Windows, and Linux are not implemented.
 
 ## Installation
 
@@ -18,7 +18,7 @@ iOS 13.0 or later for installation. Corner values only populate on iPad devices 
 flutter pub add corner_adaptive_safe_area
 ```
 
-Your iOS deployment target must be `13.0` or higher (set in `ios/Podfile` and the Runner target). Corner-adaptation values only populate on iPad devices running iPadOS 26.0+; on iPhone, earlier iOS/iPadOS versions, and non-iOS platforms the widgets render as no-ops.
+Your iOS deployment target must be `15.0` or higher (set in `ios/Podfile` and the Runner target). Corner-adaptation values only populate on iPad devices running iPadOS 26.0+; on iPhone, earlier iOS/iPadOS versions, and non-iOS platforms the widgets render as no-ops.
 
 ## Setup
 
@@ -221,7 +221,7 @@ See the `test/` directory for worked examples.
 
 ## Limitations
 
-- Installs on iOS 13.0+, but corner values only report on iPad devices running iPadOS 26.0+. On iPhone, iOS/iPadOS 13.0–25.x, Android phones, Android tablets, and other non-iOS platforms, `CornerInsets.zero` is reported and the widgets pad by zero.
+- Installs on iOS 15.0+, but corner values only report on iPad devices running iPadOS 26.0+. On iPhone, iOS/iPadOS 15.0–25.x, Android phones, Android tablets, and other non-iOS platforms, `CornerInsets.zero` is reported and the widgets pad by zero.
 - No Android, macOS, web, Windows, or Linux implementations.
 - `CornerAdaptiveSafeArea` and `CornerAdaptiveBuilder` measure post-layout, so the first frame after a size change may render with stale (or zero) insets before the next frame corrects it.
 
