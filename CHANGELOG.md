@@ -1,3 +1,9 @@
+## 0.0.2
+
+* Requires Flutter 3.24.0 or later and Dart 3.5.0 or later.
+* Supports Swift Package Manager for iOS while retaining CocoaPods compatibility.
+* Minimum iOS deployment target: 15.0.
+
 ## 0.0.1
 
 * Initial release.
